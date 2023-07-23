@@ -25,11 +25,12 @@ const MainnetWidgets = {
   widgetMetadata: "mob.near/widget/WidgetMetadata",
   profileImage: "mob.near/widget/ProfileImage",
   notificationButton: "mob.near/widget/NotificationButton",
-  profilePage: "mob.near/widget/ProfilePage",
+  profilePage: "near/widget/ProfilePage",
   profileName: "patrick.near/widget/ProfileName",
   editorComponentSearch: "mob.near/widget/Editor.ComponentSearch",
   profileInlineBlock: "mob.near/widget/Profile.InlineBlock",
-  viewHistory: "bozon.near/widget/WidgetHistory",
+  // viewHistory: "bozon.near/widget/WidgetHistory",
+  viewHistory: "near/widget/ComponentHistory",
 };
 
 export const Widgets =

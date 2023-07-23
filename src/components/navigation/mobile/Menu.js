@@ -202,15 +202,15 @@ export function Menu(props) {
             </NavigationButton>
           </li>
           <li>
-            <NavigationButton route="/edit">
+            {/* <NavigationButton route="/edit">
               <Code />
               Editor
-            </NavigationButton>
+            </NavigationButton> */}
           </li>
           <li>
-            <NavigationButton href={props.documentationHref}>
+            <NavigationButton href="https://docs.ProofOfVibes.com" target="_blank">
               <Book />
-              Documentation
+              Docs
             </NavigationButton>
           </li>
         </ul>
