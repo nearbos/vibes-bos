@@ -69,9 +69,15 @@ export function DesktopNavigation(props) {
         </Link>
         <div className="navigation-section">
           <NavigationButton route="/">Home</NavigationButton>
-          <NavigationButton route="/edit">Editor</NavigationButton>
-          <NavigationButton href={props.documentationHref}>
+          <NavigationButton route="/#/proofofvibes.near/widget/Vibes.Feed.main">Feed</NavigationButton>
+         
+          {/* <NavigationButton href={props.documentationHref}>
             Docs
+            <ArrowUpRight />
+          </NavigationButton> */}
+
+                    <NavigationButton href="https://ProofOfVibes.com/telegram">
+            Community
             <ArrowUpRight />
           </NavigationButton>
         </div>
