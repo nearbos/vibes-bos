@@ -208,9 +208,9 @@ export function Menu(props) {
             </NavigationButton> */}
           </li>
           <li>
-            <NavigationButton href="https://docs.ProofOfVibes.com" target="_blank">
+            <NavigationButton href="https://ProofOfVibes.com/telegram" target="_blank">
               <Book />
-              Docs
+              Telegram
             </NavigationButton>
           </li>
         </ul>
