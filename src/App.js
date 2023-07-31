@@ -6,7 +6,7 @@ import "react-bootstrap-typeahead/css/Typeahead.css";
 import "react-bootstrap-typeahead/css/Typeahead.bs5.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import "App.scss";
-import { HashRouter as Router, Link, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import EditorPage from "./pages/EditorPage";
 import ViewPage from "./pages/ViewPage";
 import { setupWalletSelector } from "@near-wallet-selector/core";
@@ -48,8 +48,6 @@ function App(props) {
   const near = useNear();
   const account = useAccount();
   const accountId = account.accountId;
-
-  const location = window.location;
 
   useEffect(() => {
     initNear &&
