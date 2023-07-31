@@ -34,6 +34,7 @@
     "react-bootstrap-typeahead": "^6.1.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.2.0",
+    "react-webcam": "^7.1.1",
     "styled-components": "^5.3.6"
   },
   "scripts": {

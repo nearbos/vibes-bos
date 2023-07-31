@@ -30,6 +30,7 @@ import Big from "big.js";
 import { NavigationWrapper } from "./components/navigation/NavigationWrapper";
 import { NetworkId, Widgets } from "./data/widgets";
 import { useEthersProviderContext } from "./data/web3";
+import { Camera } from "./components/custom/Camera";
 
 export const refreshAllowanceObj = {};
 const documentationHref = "https://docs.ProofOfVibes.com";
@@ -78,6 +79,9 @@ function App(props) {
             }
             return <Link {...props} />;
           },
+          Camera: (props) => {
+            return <Camera {...props} />
+          }
         },
       });
   }, [initNear]);
