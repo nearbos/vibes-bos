@@ -1,0 +1,15 @@
+{
+  "description": "Brought to you by NEAR Week, pass in medium handle and rss feed into props",
+  "image": {
+    "ipfs_cid": "bafkreid2bpbrph5tzkgixfyacpd7qo7n7ygw6oppqmhsxbxuhyv4croezi"
+  },
+  "name": "RSS & Medium News Feed",
+  "tags": {
+    "blog": "",
+    "nearweek": "",
+    "rss": "",
+    "api": "",
+    "news": "",
+    "medium": ""
+  }
+}

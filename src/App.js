@@ -31,6 +31,9 @@ import { NavigationWrapper } from "./components/navigation/NavigationWrapper";
 import { NetworkId, Widgets } from "./data/widgets";
 import { useEthersProviderContext } from "./data/web3";
 import { Camera } from "./components/custom/Camera";
+import { useBosLoaderInitializer } from "./hooks/useBosLoaderInitializer";
+import FlagsPage from "./pages/Flags";
+import { BosLoaderBanner } from "./components/BosLoaderBanner";
 
 export const refreshAllowanceObj = {};
 const documentationHref = "https://docs.ProofOfVibes.com";
@@ -44,6 +47,7 @@ function App(props) {
   const [widgetSrc, setWidgetSrc] = useState(null);
 
   const ethersProviderContext = useEthersProviderContext();
+  useBosLoaderInitializer();
 
   const { initNear } = useInitNear();
   const near = useNear();
@@ -162,6 +166,9 @@ function App(props) {
       <EthersProviderContext.Provider value={ethersProviderContext}>
         <Router basename={process.env.PUBLIC_URL}>
           <Switch>
+          <Route path={"/flags"}>
+              <FlagsPage {...passProps} />
+            </Route>
             <Route path={"/embed/:widgetSrc*"}>
               <EmbedPage {...passProps} />
             </Route>
@@ -170,6 +177,7 @@ function App(props) {
               <EditorPage {...passProps} />
             </Route>
             <Route path={"/:widgetSrc*"}>
+              <BosLoaderBanner />
               <NavigationWrapper {...passProps} />
               <ViewPage {...passProps} />
             </Route>

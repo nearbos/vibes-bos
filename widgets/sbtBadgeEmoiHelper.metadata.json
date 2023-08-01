@@ -1,0 +1,12 @@
+{
+  "description": "badgeType and accountId as prop -> pass in og, regen, human, vibes",
+  "image": {
+    "ipfs_cid": "bafkreifyysreq6v65aaarsknanvlpkkmuoh2ratllna75gpwbsrtzbifue"
+  },
+  "name": "SBT Badge Emoji",
+  "tags": {
+    "sbt": "",
+    "vibes": "",
+    "regen": ""
+  }
+}

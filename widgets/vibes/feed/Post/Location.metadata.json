@@ -1,0 +1,15 @@
+{
+  "description": "Finds users location",
+  "image": {
+    "ipfs_cid": "bafkreidjmqdt7ggfsjrixc4p337bb6wvq546niuyegu26sdmpepgg4ettq"
+  },
+  "name": "Location Helper",
+  "tags": {
+    "geo": "",
+    "proofofvibes": "",
+    "vibe": "",
+    "utils": "",
+    "vibes": "",
+    "location": ""
+  }
+}

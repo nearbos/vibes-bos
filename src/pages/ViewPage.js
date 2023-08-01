@@ -3,12 +3,16 @@ import { Widget } from "near-social-vm";
 import { useParams } from "react-router-dom";
 import { useQuery } from "../hooks/useQuery";
 import { useHashRouterLegacy } from "../hooks/useHashRouterLegacy";
+import { useBosLoaderStore } from "../stores/bos-loader";
 
 export default function ViewPage(props) {
   useHashRouterLegacy();
   const { widgetSrc } = useParams();
   const query = useQuery();
   const [widgetProps, setWidgetProps] = useState({});
+  const redirectMapStore = useBosLoaderStore();
+
+  console.log(redirectMapStore);
 
   const src = widgetSrc || props.widgets.default;
   const setWidgetSrc = props.setWidgetSrc;
@@ -44,7 +48,14 @@ export default function ViewPage(props) {
             paddingTop: "var(--body-top-padding)",
           }}
         >
-          <Widget key={src} src={src} props={widgetProps} />{" "}
+          <Widget
+            key={src}
+            config={{
+              redirectMap: redirectMapStore.redirectMap,
+            }}
+            src={src}
+            props={widgetProps}
+          />
         </div>
       </div>
     </div>

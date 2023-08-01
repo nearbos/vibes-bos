@@ -1,0 +1,14 @@
+{
+  "description": "Powered by geneadrop contract, pass in image, title, description and receiver. Mint NFTs through nft.genadrop.near contract",
+  "image": {
+    "ipfs_cid": "bafkreifferbskxjyhxwb66uzsqkhffim6fxcusoqhkgwwdgqikahtisbui"
+  },
+  "name": "NFT Minter",
+  "tags": {
+    "nft": "",
+    "minter": "",
+    "app": "",
+    "vibes": "",
+    "nft-minter": ""
+  }
+}
