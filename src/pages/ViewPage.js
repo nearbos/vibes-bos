@@ -12,8 +12,6 @@ export default function ViewPage(props) {
   const [widgetProps, setWidgetProps] = useState({});
   const redirectMapStore = useBosLoaderStore();
 
-  console.log(redirectMapStore);
-
   const src = widgetSrc || props.widgets.default;
   const setWidgetSrc = props.setWidgetSrc;
   const viewSourceWidget = props.widgets.viewSource;
