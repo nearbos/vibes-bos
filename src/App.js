@@ -6,7 +6,7 @@ import "react-bootstrap-typeahead/css/Typeahead.css";
 import "react-bootstrap-typeahead/css/Typeahead.bs5.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import "App.scss";
-import { HashRouter as Router, Link, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import EditorPage from "./pages/EditorPage";
 import ViewPage from "./pages/ViewPage";
 import { setupWalletSelector } from "@near-wallet-selector/core";
@@ -30,6 +30,7 @@ import Big from "big.js";
 import { NavigationWrapper } from "./components/navigation/NavigationWrapper";
 import { NetworkId, Widgets } from "./data/widgets";
 import { useEthersProviderContext } from "./data/web3";
+import { Camera } from "./components/custom/Camera";
 
 export const refreshAllowanceObj = {};
 const documentationHref = "https://docs.ProofOfVibes.com";
@@ -48,8 +49,6 @@ function App(props) {
   const near = useNear();
   const account = useAccount();
   const accountId = account.accountId;
-
-  const location = window.location;
 
   useEffect(() => {
     initNear &&
@@ -80,6 +79,9 @@ function App(props) {
             }
             return <Link {...props} />;
           },
+          Camera: (props) => {
+            return <Camera {...props} />
+          }
         },
       });
   }, [initNear]);

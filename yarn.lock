@@ -8532,9 +8532,9 @@ near-seed-phrase@^0.2.0:
     near-hd-key "^1.2.1"
     tweetnacl "^1.0.2"
 
-"near-social-vm@git+https://github.com/NearSocial/VM.git#2.2.3":
-  version "2.2.3"
-  resolved "git+https://github.com/NearSocial/VM.git#381ddbdc8ef5bde7975bebe8f640c1a5f9d85b94"
+"near-social-vm@git+https://github.com/NearSocial/VM.git#dev":
+  version "2.2.4"
+  resolved "git+https://github.com/NearSocial/VM.git#186bdea1d7d998e6dd836f54d974960ccaa312c8"
   dependencies:
     "@braintree/sanitize-url" "6.0.0"
     "@radix-ui/react-accordion" "^1.1.1"
@@ -9861,6 +9861,11 @@ react-uuid@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/react-uuid/-/react-uuid-1.0.3.tgz#77418d1ebd29b4c4ab8e457272887d489aa87836"
   integrity sha512-cw6Rr6JphvsdK4xHPGBjKD7XSH6Y6i4NJFWUO3OiDd7NLcR8xVeQ3CfeKm7h+S5tpZZVfbH3Tkrz/ydsIiV8pA==
+
+react-webcam@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/react-webcam/-/react-webcam-7.1.1.tgz#e6290b192cde0d2a1039051a019a18e998d7fb39"
+  integrity sha512-2W5WN8wmEv8ZlxvyAlOxVuw6new8Bi7+KSPqoq5oa7z1KSKZ72ucaKqCFRtHSuFjZ5sh5ioS9lp4BGwnaZ6lDg==
 
 react@18.2.0, react@^18.2.0:
   version "18.2.0"
